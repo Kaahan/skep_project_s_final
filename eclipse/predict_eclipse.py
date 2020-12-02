@@ -173,7 +173,7 @@ class PredictLongitude:
 
 if __name__ == '__main__':
 	if len(sys.argv) != 3:
-		help_msg = "Usage: front_end.py DATE TIME, where DATE is in the format YYYY-MM-DD and time is in the format HH:MM:SS.\nExample: python predict_eclipse.py 2144-05-03 01:02:06\nList of sample eclipses: https://eclipse.gsfc.nasa.gov/SEsaros/SEsaros150.html"
+		help_msg = "Usage: python predict_eclipse.py DATE TIME, where DATE is in the format YYYY-MM-DD and time is in the format HH:MM:SS.\nExample: python predict_eclipse.py 2144-05-03 01:02:06\nList of sample eclipses: https://eclipse.gsfc.nasa.gov/SEsaros/SEsaros150.html"
 		print(help_msg)
 		exit(1)
 
