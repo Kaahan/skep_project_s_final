@@ -21,7 +21,7 @@ and
 
 ```python planetary_motion/generate_raw_data.py motion_data.csv --start 1995-01-01-00-00-00 --end 2000-01-01-00-00-00 --freq 1D```
 
-as well as the fourier features generation:
+as well as the fourier features generation (you may have to create the folder `fourier_features`:
 
 ```python planetary_motion/fourier_data.py ./raw_features/motion_data.csv ./fourier_features/fourier_motion```.
 
@@ -40,7 +40,7 @@ You can run inference for some time `t` (format `%Y-%m-%d %H:%M:%S`) by executin
 
 To train the models from scratch, simply exclude the ``--load_models True`` option i.e. 
 
-```python planetary_motion/planetary_motion.py "2000-01-05 00:00:00" ./raw_features/final_5_year_data.csv ./fourier_features/test_code_5.npy ridge```
+```python planetary_motion/planetary_motion.py "2000-01-05 00:00:00" ./raw_features/final_motion_data.csv ./fourier_features/fourier_motion.npy ridge```
 
 ### How to use Eclipse Models
 
