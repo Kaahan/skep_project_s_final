@@ -9,7 +9,7 @@ Parker Nelson
 
 ### How to Generate Datasets:
 
-The four necessary datasets are included (`moon_phase_data.csv` moon phase models; `solar_eclipse_data.csv`; `eclipfinal_motion_data.csv` and `fourier_features_final_5000.npy` for planetary motion). There is no need to generate datasets again unless you would like to.
+The three of the four necessary datasets are included (`moon_phase_data.csv` moon phase models; `solar_eclipse_data.csv`; `eclipfinal_motion_data.csv` for planetary motion). Unfortunately our fourier features dataset is too large for GitHub (we're looking into alternate hosting solutions), so please generate the fourier features using the command below.
 
 If you would like to generate the datasets from scratch you can follow the following instructions.
 
@@ -21,7 +21,7 @@ and
 
 ```python planetary_motion/generate_raw_data.py motion_data.csv --start 1995-01-01-00-00-00 --end 2000-01-01-00-00-00 --freq 1D```
 
-as well as 
+as well as the fourier features generation:
 
 ```python planetary_motion/fourier_data.py ./raw_features/motion_data.csv ./fourier_features/fourier_motion```.
 
