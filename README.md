@@ -1,6 +1,9 @@
 # Project S (Final) - Team SKEP
  The late deadline assignment for Project S CS 189 at Berkeley
 
+![DFT](./media/dft.gif)
+![Ridge](./media/ridge.gif)
+
 ### Group Members:
 Kaahan Radia
 Stephen Lin
